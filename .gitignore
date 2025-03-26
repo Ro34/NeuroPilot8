@@ -10,4 +10,8 @@ wheels/
 .venv
 
 # sdk
-neuropilot-sdk-basic-8.0.7-build20250122
+download/
+neuropilot-sdk-basic-8.0.7-build20250122/
+20250203_Neuron_SDK_v1.2506.01_neuron-8.0-release_release/
+mtk_llm_sdk_v2.8.2/
+GAI-Deployment-Toolkit-v2.0.8_qwen2.5-0.5b-1.5b-7b-v0.1
