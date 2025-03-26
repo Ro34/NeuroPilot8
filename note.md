@@ -51,3 +51,31 @@ pip3 install mtk_converter-<version>+release-cp310-cp310-manylinux_2_17_x86_64.m
 ```bash
 pip3 install mtk_quantization-<version>-py3-none-any.whl
 ```
+
+## Model Preparation
+### Preparing Model Weights
+```bash
+mkdir GAI-Deployment-Toolkit-<toolkit_version>_<model_name>-<model_version>/models/<model_name>/
+
+#GAI-Deployment-Toolkit-<toolkit_version>_<model_name>-<model_version>/
+# └ models/
+#   └ <model_name>/
+#     ├ pytorch_model-00001-of-00002.bin (or model-00001-or-0000x.safetensors)
+#     ├ pytorch_model-00002-of-00002.bin (or model-00002-or-0000x.safetensors)
+#     ├ config.json
+#     ├ tokenizer_config.json
+#     ├ special_tokens_map.json
+#     └ tokenizer.model (or tokenizer.json)
+```
+# 2.Conversion and PTQ
+## prepare model for PTQ
+```bash
+cd GAI-Deployment-Toolkit-<toolkit_version>_<model_name>-<model_version>/post_training_quantize
+bash 1_make_ptq_calibration_dataset.sh
+
+```
+## Performing PTQ on the Model
+```bash
+bash 2_ptq.sh
+```
+
