@@ -3,5 +3,21 @@ name = "neuropilot8"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = []
+requires-python = ">=3.9"
+dependencies = [
+    "argparse>=1.4.0",
+    "flatbuffers>=25.2.10",
+    "jsonschema>=4.23.0",
+    "lxml>=5.3.1",
+    "matplotlib>=3.10.1",
+    "natsort>=8.4.0",
+    "networkx>=3.4.2",
+    "numpy>=2.2.4",
+    "packaging>=24.2",
+    "plotly>=6.0.1",
+    "protobuf==3.9.0",
+    "pybind11>=2.13.6",
+    "singleton-decorator>=1.0.0",
+    "tqdm>=4.67.1",
+    "xxhash>=3.5.0",
+]
